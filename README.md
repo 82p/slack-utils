@@ -2,7 +2,7 @@
 
 ## invite to times
 
-this script is invite all users to all 'times_XXX' channel.
+this script invites all users to all 'times_XXX' channel.
 
 ```bash
 set SLACK_API_TOKEN="token"
