@@ -22,12 +22,21 @@ pip install pipenv
 pipenv --version
 ```
 
+## Run Script on pipenv
+
 ```bash
 pipenv install --dev # Including package for development.
 pipenv run python invite_to_times.py
 ```
 
+Alternatively, by entering to pipenv, you can use like a normal python.
 
+```bash
+pipenv shell
+
+pip install XXXXXX
+python invite_to_times.py
+```
 
 # Futures
 
