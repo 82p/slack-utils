@@ -1,12 +1,51 @@
 # Slack Utility Tools
 
-## invite to times
+# Usage
+
+## Create a Slack App and issue token
+
+First of all, you have to create [slack app](https://api.slack.com/apps) and issue the token.
+
+Every time you run the script you need to set it as an environment variable.
+
+```bash
+set SLACK_API_TOKEN="your-app-token"
+python invite_to_times.py
+```
+
+## Install pipenv
+
+This project is managed with [pipenv](https://github.com/kennethreitz/pipenv) for virtual enviroment.
+
+```bash
+pip install pipenv
+pipenv --version
+```
+
+## Run Script on pipenv
+
+```bash
+pipenv install --dev # Including package for development.
+pipenv run python invite_to_times.py
+```
+
+Alternatively, by entering to pipenv, you can use like a normal python.
+
+```bash
+pipenv shell
+
+pip install XXXXXX
+python invite_to_times.py
+```
+
+# Futures
+
+## Invite to channels named 'times_XXX'
 
 this script invites all users to all 'times_XXX' channel.
 
 ```bash
-set SLACK_API_TOKEN="token"
-python invite_to_times.py
+pipenv run python invite_to_times.py
 ```
 
 ### what 'times_XXX' channel ?
