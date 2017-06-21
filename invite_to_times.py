@@ -10,7 +10,7 @@ def invite_to_times():
     if TOKEN:
         if "HTTP_PROXY" in os.environ and "HTTPS_PROXY" in os.environ:
             http = os.environ["HTTP_PROXY"]
-            https = os.environ["HTTP_PROXY"]
+            https = os.environ["HTTPS_PROXY"]
             proxy = {"http": http, "https": https}
             print("setting http proxy : " + http)
             print("setting https proxy : " + https)
